@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//VARIABLES
+$boxshadowColor: rgba(167, 171, 211, 0.2);
+$boxBorder: 1px solid #AAAAAA;
+// BASE SETTINGS
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  color: #202020;
+  background-color: #ffffff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:antialiased;
+}
+
+.muted-text{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.content{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height:100vh;
+}

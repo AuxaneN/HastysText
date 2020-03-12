@@ -1,0 +1,16 @@
+.character-icon img{
+  width:100px;
+  height:100px;
+  -webkit-filter:drop-shadow(4px 4px 5px rgba(167, 171, 211, 0.43));
+  filter:drop-shadow(4px 4px 5px rgba(167, 171, 211, 0.43));
+  //animate filter transition
+}
+.inactive img{
+  -webkit-filter: grayscale(100%) drop-shadow(4px 4px 5px rgba(167, 171, 211, 0.43));
+  filter: grayscale(100%) drop-shadow(4px 4px 5px rgba(167, 171, 211, 0.43));
+  
+}
+.active{
+  -webkit-filter: initial; 
+  filter: initial;
+}

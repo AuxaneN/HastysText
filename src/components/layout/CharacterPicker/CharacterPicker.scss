@@ -1,0 +1,14 @@
+.character-grid{
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  width:346px;
+  justify-content: space-between;
+  // .character-icon:not(:nth-child(3n+1)){
+  //   margin-left:60px;
+  // }
+  // .character-icon{
+  //   margin-top:30px
+  // }
+  margin-bottom: 40px;
+}

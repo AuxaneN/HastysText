@@ -1,0 +1,26 @@
+.button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border:none;
+  font-size: 18px;
+  &.primary{
+    background-color: rgb(98, 243, 98);
+    color:rgb(69, 105, 71);
+    transition: 0.5s;
+    &:hover{
+      background-color: rgb(35, 121, 35);
+      color: white;
+      transition: 0.5s;
+    }
+  } 
+  &.danger{
+    background-color: rgb(221, 49, 92);
+    color:white;
+    transition: 0.5s;
+    &:hover{
+      background-color: rgb(114, 17, 41);
+      transition: 0.5s;
+    }
+  }
+}

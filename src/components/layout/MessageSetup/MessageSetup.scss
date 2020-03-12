@@ -1,0 +1,13 @@
+.message-setup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 512px;
+  position: relative;
+  :first-child{
+    margin-right:10px;
+  }
+  .textarea{
+    margin-top: 10px;
+  }
+}

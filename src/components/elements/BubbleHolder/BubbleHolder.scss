@@ -1,0 +1,13 @@
+.bubble-holder{
+  position: absolute;
+  max-height:800px;
+  height:90%;
+  max-width: 700px;
+  transform: translateX(-50%);
+  left:50%;
+  top:24px;
+  z-index: 99;
+  overflow-y: scroll;
+  scrollbar-color: rgba(220, 220, 220, 0.164) rgba(231, 231, 231, 0.253);
+  scrollbar-width: thin;
+}

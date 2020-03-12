@@ -1,0 +1,12 @@
+.phone-bg{
+  width:375px;
+  height:90vh;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 30px 60px 100px rgba(167, 171, 211, 0.5);
+  position: relative;
+  //Put on top and bottom respectively
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

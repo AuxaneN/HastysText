@@ -1,0 +1,65 @@
+[
+  {
+    "id":0,
+    "author":0,
+    "day":"Tuesday 2nd January",
+    "time":"10:00 PM",
+    "content": "This is a message"
+  },
+  {
+    "id":1,
+    "author":2,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "That's a reply to that message"
+  },
+  {
+    "id":2,
+    "author":1,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "Message from Li saying BS"
+  },
+  {
+    "id":3,
+    "author":4,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "Ill have u know I graduated first from my class"
+  },
+  {
+    "id":4,
+    "author":2,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "UWu what's this"
+  },
+  {
+    "id":5,
+    "author":1,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "Holy crap no"
+  },
+  {
+    "id":6,
+    "author":3,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "DSFsfsfsfd"
+  },
+  {
+    "id":7,
+    "author":5,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "I'm fancy"
+  },
+  {
+    "id":8,
+    "author":1,
+    "day":"",
+    "time":"10:00 PM",
+    "content": "Lol"
+  }
+]

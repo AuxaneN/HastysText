@@ -1,0 +1,13 @@
+header{
+  position: absolute;
+}
+h2, a{
+  color:#c4c4c4;
+}
+
+a{
+  font-size: 14px;
+  &:hover{
+    color:black;
+  }
+}

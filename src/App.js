@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import {NewMessageProvider} from './context/NewMessage.context';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Header } from './components/layout/Header/Header';
+import Setup from './components/layout/Setup/Setup';
+import {MessageDisplay} from './components/layout/MessageDisplay/MessageDisplay';
+
+
+import './App.scss';
+
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      messages: ''
+    }
+  }
+
+  render(){
+    return (
+    <NewMessageProvider value={this.state.messages}>
+      <div className="App">
+        <Header />
+        <section className="content">
+          <MessageDisplay />
+          <Setup />
+        </section>
+      </div>
+    </NewMessageProvider>
+    );
+  }
 }
 
 export default App;

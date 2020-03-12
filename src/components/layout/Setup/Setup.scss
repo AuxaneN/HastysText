@@ -1,0 +1,56 @@
+.setup{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:auto;
+  width:auto;
+  position: relative;
+  .msg-setup{
+    position: relative;
+    .submitBtn{
+      position: absolute;
+      bottom:10px;
+      right:10px;
+      .mdsend{
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        left:50%;
+        top:50%;
+        margin:0px;
+        svg{
+          margin:0px;
+          fill:white;
+        }
+      }
+      input[type="submit"]{
+        height:20px;
+        width:20px;
+        padding:20px;
+        border-radius: 30px;
+        background-color: rgb(74, 74, 252);
+        border:none;
+        transition: 0.5s;
+      }
+        &:hover{
+          .mdsend{
+            svg{
+              transform: rotate(-180deg);
+              transition: 0.5s;
+            }
+          }
+          input[type="submit"]{
+            background-color:rgb(33, 33, 124);;
+            transition: 0.5s;
+          }
+        }
+  
+    }
+  }
+
+  .button-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top:40px;
+  }
+}

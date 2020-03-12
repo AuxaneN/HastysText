@@ -1,0 +1,32 @@
+[
+  {
+    "id":0,
+    "name":"Harper",
+    "imageUrl":"/images/harper.png"
+  },
+  {
+    "id":1,
+    "name":"Li",
+    "imageUrl":"/images/li.png"
+  },
+  {
+    "id":2,
+    "name":"Keiah",
+    "imageUrl":"/images/keiah.png"
+  },
+  {
+    "id":3,
+    "name":"Sonny",
+    "imageUrl":"/images/sonny.png"
+  },
+  {
+    "id":4,
+    "name":"Chase",
+    "imageUrl":"/images/chase.png"
+  },
+  {
+    "id":5,
+    "name":"Sherri",
+    "imageUrl":"/images/sherri.png"
+  }
+]

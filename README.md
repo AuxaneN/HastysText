@@ -1,4 +1,4 @@
-## A fake test App to save my wife the pain of editing an excel spread shit.
+## A fake test App to save my wife the pain of editing an excel spread sheet.
 
 Chats are saved on the Local storage for now. /!\ Clearing cookies will delete the entire chat history
 

@@ -5,7 +5,7 @@ import {CharacterIcon} from '../CharacterIcon/CharacterIcon';
 import './ChatBubble.scss';
 
 export const ChatBubble = (props) => (
-  <div className={`chat-wrapper ${props.author === 1 ? 'sender' : 'recipient'}`}>
+  <div className={`chat-wrapper ${props.author === 'fDULsWag4Prntw6DLwx3' ? 'sender' : 'recipient'}`}>
     <CharacterIcon 
     imageUrl={props.url}
     name={props.author}/>

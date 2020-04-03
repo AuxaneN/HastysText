@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import uniqid from 'uniqid';
 import store from 'store';
+import firebase from '../../../firebase'
 
 import NewMessage from '../../../context/NewMessage.context';
 import './Setup.scss';
@@ -19,7 +19,7 @@ class Setup extends Component{
     super()
     
     this.state = {
-      isSelected: 0,
+      isSelected: 'fDULsWag4Prntw6DLwx3',
       day: '',
       time: '',
       message:''
@@ -31,6 +31,7 @@ class Setup extends Component{
   saveMessages = () => {
     store.set('chatlog', this.context.messages);
     console.log('Log saved', store.get('chatlog'));
+    alert('Chat saved')
   }
   
   checkForStorage = () => {
@@ -48,10 +49,10 @@ class Setup extends Component{
   } 
 
   handleCharClick = (e) => {
-    const id = parseInt(e.target.parentNode.getAttribute('id'));
+    const id = e.target.parentNode.getAttribute('id');
     this.state.isSelected === id ?
     this.setState({isSelected : this.state.isSelected })
-    : this.setState({isSelected : id})
+    : this.setState({isSelected : id});
   }
   
   handleChange = (e) =>{
@@ -61,10 +62,14 @@ class Setup extends Component{
   }
 
   handleSubmit = (e) => {
-    const { addNewMessages} = this.context;
-    const chat = {id: uniqid(), author: this.state.isSelected, day: this.state.day, time: this.state.time, content:this.state.message};
-    addNewMessages(chat);
     e.preventDefault();
+    const db = firebase.firestore();
+    // const { addNewMessages } = this.context;
+    const messageRef = db.collection('conversations/6fUCfmN4dPlih8mBprFQ/message');
+    const chat = { author: this.state.isSelected, day: this.state.day, time: this.state.time, content:this.state.message};
+    messageRef.add(chat);
+    // addNewMessages(chat);
+    this.setState({ message : ''});
   }
 
   clearChat = () => {
@@ -85,17 +90,15 @@ class Setup extends Component{
             click={this.handleCharClick}
             class={this.state.isSelected}
           />
-
           <MessageSetup 
           change={this.handleChange}
           {...this.state}
           />
-          <div className="submitBtn">
+          <button className="submitBtn" type="submit" >
             <div className="mdsend">
               <MdSend />
             </div>
-            <input type="submit" value=''/>
-          </div>
+          </button>
         </div>
         <div className="button-wrapper">
           <Button

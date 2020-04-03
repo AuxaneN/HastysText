@@ -5,7 +5,13 @@ const NewMessage = React.createContext();
 class NewMessageProvider extends Component{
   //Context state
   state={
-    messages:[]
+    messages:[],
+    characterList: []
+  }
+
+  setCharacterList = list =>{
+    this.setState(() => ({characterList : [...this.state.characterList, ...list]}))
+    console.log(this.state.characterList)
   }
   //Methods to update state
   setMessages = message =>{
@@ -27,17 +33,21 @@ class NewMessageProvider extends Component{
 
   render(){
     const {children} = this.props;
+    const {characterList} = this.state;
     const {messages} = this.state;
     const {setMessages} = this;
     const {addNewMessages} = this;
     const {clearMessages} = this;
+    const {setCharacterList} = this;
     return (
       <NewMessage.Provider
       value = {{
+        characterList,
         messages,
         setMessages,
         addNewMessages,
-        clearMessages
+        clearMessages,
+        setCharacterList
       }}
       >
         {children}

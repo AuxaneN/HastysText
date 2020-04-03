@@ -18,7 +18,7 @@ class App extends Component{
 
   render(){
     return (
-    <NewMessageProvider value={this.state.messages}>
+    <NewMessageProvider value={this.state.characterList}>
       <div className="App">
         <Header />
         <section className="content">
